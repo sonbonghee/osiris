@@ -58,8 +58,9 @@ volumes:
   nginx-cache:
 
 networks:
+
   umami_default:
-  driver: bridge
+    driver: bridge  # Docker 가 자동 생성하게 할 때
 
 # ── CasaOS app-store metadata (ignored by plain Docker Compose) ──
 x-casaos:
