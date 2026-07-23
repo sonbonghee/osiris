@@ -59,7 +59,7 @@ volumes:
 
 networks:
   umami_default:
-    external: true
+  driver: bridge
 
 # ── CasaOS app-store metadata (ignored by plain Docker Compose) ──
 x-casaos:
